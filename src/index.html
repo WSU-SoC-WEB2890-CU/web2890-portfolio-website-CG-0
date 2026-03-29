@@ -1,28 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="TODO: Portfolio website ..." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Fredoka:wght@300..700&family=Gabarito:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Portfolio website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index,follow">
-  <meta name="description" content="TODO: Portfolio website ...">
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md bg-black py-md-4" data-bs-theme="dark">
+      <div class="container-fluid">
+        <span class="navbar-brand"></span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item mt-4 ps-3 rounded-4 ps-md-0 mt-md-0" id="mainLink">
+              <a class="nav-link active fw-semibold px-md-3" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item ps-3 mt-4 ps-md-0 mt-md-0 ms-md-3 otherLink">
+              <a class="nav-link fw-semibold px-md-3" href="gallery.html">PROJECT GALLERY</a>
+            </li>
+            <li class="nav-item ps-3 mt-4 ps-md-0 mt-md-0 ms-md-3 otherLink">
+              <a class="nav-link fw-semibold px-md-3" href="case_study.html">CASE STUDY</a>
+            </li>
+            <li class="nav-item ps-3 mt-4 ps-md-0 mt-md-0 ms-md-3 otherLink">
+              <a class="nav-link fw-semibold px-md-3" href="about_me.html">ABOUT ME</a>
+            </li>
+            <li class="nav-item ps-3 mt-4 ps-md-0 mt-md-0 ms-md-3 otherLink">
+              <a class="nav-link fw-semibold px-md-3" href="contact.html">CONTACT ME</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <link rel="stylesheet" href="./stylesheets/main.scss">
-</head>
+    <!-- Hero Image -->
+    <div id="hero-image" class="d-flex justify-content-center align-items-center">
+      <div id="hero-text" class="z-0 position-absolute">
+        <h1 class="fw-semibold text-center pb-2">HELLO.<br />MY NAME IS</h1>
+        <h1 class="fw-bold text-center pt-md-3">CHASKA GONZALES</h1>
+        <h1 class="fw-semibold text-center pt-lg-5" id="career">WEB DESIGNER</h1>
+        <p class="text-center fw-bold mt-5">
+          <a href="gallery.html" class="btn fw-bold">CHECK OUT MY WORK</a>
+        </p>
+      </div>
+      <img
+        src="images/peaky-frames-dcoWarHwbxo-unsplash.jpg"
+        class="img-fluid z-n1 position-relative"
+        alt="A piece of code"
+      />
+    </div>
 
-<body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Portfolio Website
-  </h1>
+    <!-- Expertise -->
+    <div class="bg-black pb-4" id="expertise">
+      <!-- Title -->
+      <div class="d-flex justify-content-center pt-4 fw-semibold px-4" id="expertiseTitle">
+        TO CREATE MY WEBSITES I USE...
+      </div>
+      <!-- Fields -->
+      <div id="field-areas" class="container-fluid text-center fw-bold pb-4 pt-5">
+        <div class="row mx-4 gy-3 gy-md-5 gy-lg-0">
+          <div class="col-12 col-md-6 col-lg-3 fw-bolder rounded-3">
+            <div class="d-none d-md-block">
+              <i class="bi bi-filetype-html rounded-4 p-lg-3"></i>
+            </div>
+            <span class="d-md-none">HTML5</span>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 fw-bolder rounded-3">
+            <div class="d-none d-md-block">
+              <i class="bi bi-filetype-css rounded-4 p-lg-3"></i>
+            </div>
+            <span class="d-md-none">CSS3</span>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 fw-bolder rounded-3">
+            <div class="d-none d-md-block">
+              <i class="bi bi-filetype-js rounded-4 p-lg-3"></i>
+            </div>
+            <span class="d-md-none">JS</span>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 fw-bolder rounded-3">
+            <div class="d-none d-md-block">
+              <i class="bi bi-filetype-jsx rounded-4 p-lg-3"></i>
+            </div>
+            <span class="d-md-none">REACT</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <script type="module" src="./javascripts/main.js"></script>
-</body>
+    <!-- Latest Work -->
+    <div id="latestWork" class="pb-5">
+      <!-- Title -->
+      <div class="d-flex justify-content-center fw-semibold p-4" id="latestWorkTitle">LATEST WORK</div>
+
+      <!-- Display My Latest Work-->
+      <div id="displayLatestWork" class="mx-5 rounded-4 py-5">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+          <!-- Card in Small Devices -->
+          <div class="card rounded-3 text-center d-md-none" id="smallCard">
+            <img
+              src="images/andrew-svk-REwZEYzw19g-unsplash.jpg"
+              class="card-img-top rounded-0"
+              alt="Two people on top of a mountain in the island of Socotra"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center fw-bold">SOCOTRA PROTOTYPE</h5>
+              <p class="card-text pt-3 pb-2 fw-semibold">
+                I created a prototype for a website about the island of Socotra.
+              </p>
+              <a href="case_study.html" class="fw-bold btn">Project Details</a>
+            </div>
+          </div>
+
+          <!-- Card in Medium Devices -->
+          <div id="mediumCard" class="d-none d-md-block d-lg-none card rounded-4">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-7 rounded-start-3">
+                <img
+                  src="images/andrew-svk-REwZEYzw19g-unsplash.jpg"
+                  class="img-fluid rounded-start-4"
+                  alt="Two people on top of a mountain in the island of Socotra"
+                />
+              </div>
+              <div class="col-md-5">
+                <div class="card-body text-center">
+                  <h5 class="card-title pb-3 fw-bold">SOCOTRA PROTOTYPE</h5>
+                  <a href="case_study.html" class="btn fw-bold">Project Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card in Large Devices -->
+          <div id="largeCard" class="d-none d-lg-block card text-bg-dark rounded-4">
+            <img
+              src="images/andrew-svk-REwZEYzw19g-unsplash.jpg"
+              class="card-img rounded-4"
+              alt="Two people on top of a mountain in the island of Socotra"
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title fw-bold">SOCOTRA PROTOTYPE</h5>
+              <p class="card-text">I created a prototype for a website about the island of Socotra.</p>
+              <a href="case_study.html" class="fw-bold btn">Project Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Links to Contact Page -->
+    <div
+      class="d-md-none bg-black px-4 py-5 d-flex flex-column justify-content-center align-items-center"
+      id="contactMeSection"
+    >
+      <span class="fw-semibold pb-4" id="title">HAVE ANY MORE QUESTIONS?</span>
+      <a class="text-decoration-none rounded-3 py-2 px-3 fw-bold" href="contact.html"> GET IN CONTACT </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-2 py-md-3 py-lg-5 bg-black fw-bold">
+      <div
+        class="d-flex flex-lg-column-reverse justify-content-center justify-content-md-between align-items-md-center justify-content-lg-center mx-md-4 mx-lg-0"
+      >
+        <div class="pt-lg-4">
+          <span class="align-middle">&copy;</span>Chaska Gonzales<span class="d-none d-lg-inline"
+            >&nbsp;|&nbsp;gonzaleschaska@mail.weber.edu</span
+          >
+        </div>
+        <div class="d-none d-md-block d-flex flex-row">
+          <i class="bi bi-youtube"></i>
+          <i class="bi bi-facebook ps-3 ps-lg-5"></i>
+          <i class="bi bi-envelope-fill ps-3 ps-lg-5"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

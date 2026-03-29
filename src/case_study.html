@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="TODO: Portfolio website ..." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Fredoka:wght@300..700&family=Gabarito:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md bg-black py-md-4" data-bs-theme="dark">
+      <div class="container-fluid">
+        <span class="navbar-brand"></span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ps-3 mt-4 ps-md-0 mt-md-0 ms-md-3 otherLink">
+              <a class="nav-link active fw-semibold px-md-3" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item ps-3 mt-4 ps-md-0 mt-md-0 ms-md-3 me-md-3 otherLink">
+              <a class="nav-link fw-semibold px-md-3" href="gallery.html">PROJECT GALLERY</a>
+            </li>
+            <li class="nav-item mt-4 ps-3 rounded-4 ps-md-0 mt-md-0" id="mainLink">
+              <a class="nav-link fw-semibold px-md-3" aria-current="page" href="case_study.html">CASE STUDY</a>
+            </li>
+            <li class="nav-item ps-3 mt-4 ps-md-0 mt-md-0 ms-md-3 otherLink">
+              <a class="nav-link fw-semibold px-md-3" href="about_me.html">ABOUT ME</a>
+            </li>
+            <li class="nav-item ps-3 mt-4 ps-md-0 mt-md-0 ms-md-3 otherLink">
+              <a class="nav-link fw-semibold px-md-3" href="contact.html">CONTACT ME</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Title displayed in medium and large devices -->
+    <h1 class="d-none d-md-block text-center fw-bold my-5">THE PROJECT</h1>
+
+    <!-- Image for small devices -->
+    <img
+      src="images/andrew-svk-REwZEYzw19g-unsplash.jpg"
+      class="img-fluid d-md-none"
+      alt="Two people on top of a mountain in the island of Socotra"
+    />
+
+    <!-- Image for medium devices -->
+    <div class="d-none d-md-block mx-5">
+      <img
+        src="images/andrew-svk-REwZEYzw19g-unsplash.jpg"
+        class="img-fluid rounded-4 border border-black border-3 d-xs-none d-md-block d-lg-none"
+        alt="Two people on top of a mountain in the island of Socotra"
+      />
+    </div>
+
+    <!-- Image for large devices -->
+    <div class="container text-center d-none d-lg-block" id="largeCaseStudy">
+      <div class="row g-5 align-items-center">
+        <div class="col">
+          <img
+            src="images/andrew-svk-REwZEYzw19g-unsplash.jpg"
+            class="img-fluid rounded-4 border border-black border-3"
+            alt="Two people on top of a mountain in the island of Socotra"
+          />
+        </div>
+        <div class="col">
+          <p class="fs-1 bg-black rounded-top-4 fw-bold py-3 sideInfo">SOCOTRA</p>
+          <p class="fs-1 bg-black rounded-bottom-4 fw-bold py-3 sideInfo">THE ISLAND <br />OF DREAMS</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Title for small & medium devices -->
+    <h1 class="text-center fw-bold my-5 d-lg-none">
+      <span class="d-md-none">Socotra <br />Prototype</span>
+      <span class="d-none d-md-block">Socotra:<br />The Island of Dreams</span>
+    </h1>
+
+    <!-- Description for small devices -->
+    <div id="smallCaseDesc" class="mx-4 mt-lg-5 py-5 px-3 rounded-4">
+      As stated in other pages, I developed a prototype about the island of Socotra to showcase its beauty in all
+      categories: Flora, Fauna, and People. Currently, I'm planning on re-working on it in order for it to officially be
+      the first project to be included in my portfolio.<br /><br />
+      Although it's not visible here, the original prototype that I designed does look childish and unprofessional.
+      However, despite those flaws, that prototype was the first one I committed myself in doing and which I'm still
+      proud.<br /><br />
+      The reason why I believe it is the strongest of the projects is because I managed to complete it and used all my
+      expertise to not only help pass the WEB 2500 class but to also give me a taste of what my future career is going
+      to be for my following years.
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-2 py-md-3 py-lg-5 bg-black fw-bold mt-5">
+      <div
+        class="d-flex flex-lg-column-reverse justify-content-center justify-content-md-between align-items-md-center justify-content-lg-center mx-md-4 mx-lg-0"
+      >
+        <div class="pt-lg-4">
+          <span class="align-middle">&copy;</span>Chaska Gonzales<span class="d-none d-lg-inline"
+            >&nbsp;|&nbsp;gonzaleschaska@mail.weber.edu</span
+          >
+        </div>
+        <div class="d-none d-md-block d-flex flex-row">
+          <i class="bi bi-youtube"></i>
+          <i class="bi bi-facebook ps-3 ps-lg-5"></i>
+          <i class="bi bi-envelope-fill ps-3 ps-lg-5"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
